@@ -6,17 +6,16 @@ from astrbot.core.platform.sources.aiocqhttp.aiocqhttp_message_event import Aioc
 
 @register(
     "auto_approve_all",
-    "知鱼",
-    "自动同意所有群邀请和好友申请并发送消息",
-    "1.0",
-    "https://github.com/ovoox/zhiyu-astrbot-zdtyfxx",
+    "Developer",
+    "自动同意所有群邀请和好友申请，并发送欢迎消息",
+    "1.0.1",
+    "https://github.com/your-repo/auto_approve_all",
 )
 class AutoApproveAll(Star):
     def __init__(self, context: Context):
         super().__init__(context)
-      
-        self.friend_welcome_msg = "好友发消息请改我"
-        self.group_welcome_msg = "群聊发消息请改我"
+        self.friend_welcome_msg = "你好！感谢添加我为好友，有什么我可以帮你的吗？"
+        self.group_welcome_msg = "大家好！我是机器人，很高兴加入本群～"
 
     @filter.platform_adapter_type(filter.PlatformAdapterType.AIOCQHTTP)
     async def event_monitoring(self, event: AstrMessageEvent):
