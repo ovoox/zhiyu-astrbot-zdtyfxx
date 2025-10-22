@@ -14,10 +14,10 @@ from astrbot.core.platform.sources.aiocqhttp.aiocqhttp_message_event import Aioc
 class AutoApproveAll(Star):
     def __init__(self, context: Context):
         super().__init__(context)
-        #⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+      
         self.friend_welcome_msg = "好友发消息请改我"
         self.group_welcome_msg = "群聊发消息请改我"
-        #⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
     @filter.platform_adapter_type(filter.PlatformAdapterType.AIOCQHTTP)
     async def event_monitoring(self, event: AstrMessageEvent):
         raw_message = getattr(event.message_obj, 'raw_message', None)
