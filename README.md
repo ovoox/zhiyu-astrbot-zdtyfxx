@@ -20,7 +20,8 @@ https://github.com/ovoox/zhiyu-astrbot-zdtyfxx
 
 ## 使用方法：
 
-* 请前往路径：
+* 请前往安装本插件路径打开main.py之后查看代码即可插件所需修改内容完成修改
+* 如果不知道插件位置在在哪里直接全局搜索 
 ```
-root/AstrBot/data/plugins/zhiyu-astrbot-zdtyfxx
+zhiyu-astrbot-zdtyfxx
 ```
