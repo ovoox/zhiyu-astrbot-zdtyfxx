@@ -1,0 +1,5 @@
+name: zhiyu-astrbot-zdtyfxx # 这是你的插件的唯一识别名。
+desc: 自动同意所有群邀请和好友申请并发送消息 # 插件简短描述
+version: v1.0 # 插件版本号。格式：v1.1.1 或者 v1.1
+author: 知鱼 # 作者
+repo: https://github.com/ovoox/zhiyu-astrbot-zdtyfxx # 插件的仓库地址
