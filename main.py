@@ -4,11 +4,7 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api import logger
 from astrbot.core.platform.sources.aiocqhttp.aiocqhttp_message_event import AiocqhttpMessageEvent
 
-@register(
-    "auto_approve_all",
-    "知鱼",
-    "自动同意所有群邀请和好友申请并发送消息",
-    "1.0",
+@register("zhiyu-astrbot-zdtyfxx", "知鱼", "自动同意所有群邀请和好友申请并发送消息", "1.0")
     "https://github.com/ovoox/zhiyu-astrbot-zdtyfxx",
 )
 class AutoApproveAll(Star):
